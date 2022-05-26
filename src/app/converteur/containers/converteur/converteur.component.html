@@ -14,8 +14,14 @@
             <div
                 class="__error"
                 *ngIf="b_convertControlInvalid">
-                <p>You must enter a valid number</p>
+                <p>You must enter binary number</p>
             </div>
+            
+            <div
+            class="__error"
+            *ngIf="b_convertControlBinaryInvalid">
+            <p>You must enter a valid binary number</p>
+        </div>
             <div class="uk-margin">
                 <button class="uk-button uk-button-default" (click)="onConvertClick()">Convert</button>
 

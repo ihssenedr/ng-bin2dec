@@ -24,6 +24,9 @@ export class ConverteurComponent implements OnInit {
   get b_convertControlInvalid() {
     return this.b_convertControl.hasError('required')  && this.b_convertControl.touched;
   }
+  get b_convertControlBinaryInvalid() {
+    return this.b_convertControl.hasError('invalidBinary') && this.b_convertControl.touched
+  }
   ngOnInit(): void {
   }
   onConvertClick() {
